@@ -35,22 +35,26 @@
     <link href="pricing.css" rel="stylesheet">
   </head>
   <?php
-    $nama_bagas="M Rizky Bagas Satrio";
-    $umur_bagas=16;
-    $tinggi_badan_bagas=175;
-    $hobi_bagas="Volley";
+    $luas_limas="Luas alas + (3 x luas sisi)";
+    $volume_limas="1/3 x luas alas x tinggi";
+    $gambar_1="gif/limas.gif";
 
-    $nama_citra="Citra Ayu Permatasari";
-    $umur_citra=16;
-    $tinggi_badan_citra=160;
-    $hobi_citra="Memasak dan menyanyi";
+    $luas_prisma="Luas alas + luas tutup + luas selimut";
+    $volume_prisma="(1/2 x alas segitiga x tinggi segitiga) x tinggi prisma";
 
-    $nama_nia="Tri Murniya";
-    $umur_nia=16;
-    $tinggi_badan_nia=154;
-    $hobi_nia="Membaca";
+    $luas_tabung="2phi x r**";
+    $volume_tabung="phi x r** x tinggi";
 
-    $rata_rata = ($tinggi_badan_bagas + $tinggi_badan_citra + $tinggi_badan_nia)/3;
+    $luas_kubus="6 x s**";
+    $volume_kubus="s x s x s";
+    $keliling_kubus="12 x s";
+
+    $luas_balok="2 x (pxl + pxt + lxt)";
+    $volume_balok="p x l x t";
+
+    $luas_lingkaran="phi x r**";
+    $keliling_lingkaran="2 x phi x r";
+    
   ?>
   <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-dark border-bottom shadow-sm">
@@ -67,59 +71,97 @@
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
   <h1 class="display-4">PWPB</h1>
-  <p class="lead">Pemrograman Web Perangkat Bergerak</p>
+  <p class="lead">Rumus Bangun Ruang</p>
 </div>
 
 <div class="container">
   <div class="card-deck mb-3 text-center">
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Biodata</h4>
+        <h4 class="my-0 font-weight-normal">Limas segitiga</h4>
       </div>
       <div class="card-body">
-        <img src="bagas.jpg" style="width: 200px; height: 200px; object-fit: cover;">
+        
         <ul class="list-unstyled mt-3 mb-4">
-          <li>Nama Lengkap : <?php echo $nama_bagas;?></li>
-          <li>Umur Saya : <?php echo $umur_bagas;?></li>
-          <li>Tinggi Badan Saya : <?php echo $tinggi_badan_bagas;?> cm</li>
-          <li>Hobi saya : <?php echo $hobi_bagas;?></li>
+          <li>Luas alas : <?php echo $luas_limas;?></li>
+          <li>Volume : <?php echo $volume_limas;?></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Prisma Segitiga</h4>
+      </div>
+      <div class="card-body">
+        <img src="gif/prisma.gif" style="width: 200px; height: 200px; object-fit: cover;">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Luas alas : <?php echo $luas_prisma;?></li>
+          <li>Volume : <?php echo $volume_prisma;?></li>
         </ul>
         <button type="button" class="btn btn-lg btn-block btn-light">Baca Lebih Lengkap</button>
       </div>
     </div>
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Biodata</h4>
+        <h4 class="my-0 font-weight-normal">Tabung</h4>
       </div>
       <div class="card-body">
-        <img src="citra.jpg" style="width: 200px; height: 200px; object-fit: cover;">
+        <img src="gif/tabung.gif" style="width: 200px; height: 200px; object-fit: cover;">
         <ul class="list-unstyled mt-3 mb-4">
-          <li>Nama Lengkap : <?php echo $nama_citra;?></li>
-          <li>Umur Saya : <?php echo $umur_citra;?></li>
-          <li>Tinggi Badan Saya : <?php echo $tinggi_badan_citra;?> cm</li>
-          <li>Hobi saya : <?php echo $hobi_citra;?></li>
+          <li>Luas alas : <?php echo $luas_tabung;?></li>
+          <li>Volume : <?php echo $volume_tabung;?></li>
         </ul>
         <button type="button" class="btn btn-lg btn-block btn-light">Baca Lebih Lengkap</button>
       </div>
     </div>
+
+  <div class="container">
+  <div class="card-deck mb-3 text-center">
     <div class="card mb-4 shadow-sm">
       <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Biodata</h4>
+        <h4 class="my-0 font-weight-normal">Kubus</h4>
       </div>
       <div class="card-body">
-        <img src="nia.jpg" style="width: 200px; height: 200px; object-fit: cover;">
+        <img src="gif/kubus.mp4" style="width: 200px; height: 200px; object-fit: cover;">
         <ul class="list-unstyled mt-3 mb-4">
-          <li>Nama Lengkap : <?php echo $nama_nia;?></li>
-          <li>Umur Saya : <?php echo $umur_nia;?></li>
-          <li>Tinggi Badan Saya : <?php echo $tinggi_badan_nia;?> cm</li>
-          <li>Hobi saya : <?php echo $hobi_nia;?></li>
+          <li>Luas alas : <?php echo $luas_kubus;?></li>
+          <li>Volume : <?php echo $volume_kubus;?></li>
+          <li>Keliling : <?php echo $keliling_kubus;?></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-light">Baca Lebih Lengkap</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Balok</h4>
+      </div>
+      <div class="card-body">
+        <img src="gif/balok.gif" style="width: 200px; height: 200px; object-fit: cover;">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Luas : <?php echo $luas_balok;?></li>
+          <li>Volume : <?php echo $volume_balok;?></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-light">Baca Lebih Lengkap</button>
+      </div>
+    </div>
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">Lingkaran</h4>
+      </div>
+      <div class="card-body">
+        <img src="gif/lingkaran.gif" style="width: 200px; height: 200px; object-fit: cover;">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Luas : <?php echo $luas_lingkaran;?></li>
+          <li>Keliling : <?php echo $keliling_lingkaran;?></li>
         </ul>
         <button type="button" class="btn btn-lg btn-block btn-light">Baca Lebih Lengkap</button>
       </div>
     </div>
   </div>
-  <center><h5>Rata-rata tinggi kami adalah <?php echo $rata_rata;?> cm</h5></center>
-
+</div>
+</div>
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
